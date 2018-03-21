@@ -1,0 +1,1455 @@
+ /***锚记链接标签*****/
+	
+	.shop-body-title{
+		width:1200px;
+		height:150px;
+		margin:auto;
+	}
+	.shop-body-title a{
+		position:relative;
+		display:inline-block;
+		width:360px;
+		height:60px;
+		border: 1px solid #4ab344;
+		margin-top:50px;
+		margin-left:26px;
+		border-radius:3px;
+	}
+		.title-firstImg{
+			width:30px;
+			height:30px;
+			position:absolute;
+			top:15px;
+			left:30px;
+		}
+		.title-text{
+			position:absolute;
+			width:120px;
+			left:140px;
+			top:20px;
+			font-size:14px;
+			color:#666666;
+		}
+		
+			.title-secendImg{
+				position:absolute;
+				width:30px;
+				height:30px;
+				top:15px;
+				left:290px
+			}
+			
+		/**轮播*****/		
+	  .shop-body-bl {
+        width:100%;
+		background:url(../images/shop-Bg1.jpg);
+		background-size:cover;
+		height:600px
+      }		
+	  /**每日特卖*****/
+	  .shop-everyday-title{
+		  padding-top:30px;
+		  width:1000px;
+		  margin:auto;
+		  height:150px;
+		  }
+	  .shop-everyday-titleHead{
+		  text-align:center;
+		  font-size:31px;
+		  margin-top:30px
+		  }
+		  .shop-everyday-titleHead b{
+			  color:#4ab344}
+	  .shop-everyday-titleHead span{
+		  color: rgb(231, 231, 231);
+		  }	
+	  .shop-everyday-titleFoot{
+		   text-align:center;
+		   color: rgb(136, 136, 136);
+		   line-height:36px;
+		   font-size:16px
+		  }	
+	  /**每日特卖内容*****/
+	 .shop-everyShow{
+		 width:1200px;
+		 height:520px;
+		 margin:auto;
+		 }
+	 .shop-everyShow-top{
+		 position:relative;
+		 height:300px;
+		 }
+		/*******左边******/ 
+	 	.everyShow-top-left{
+			 width:250px;
+			 position:absolute;
+			 height:280px;
+			 left:20px;
+		 }
+		
+		.everyShow-top-left>div{
+			line-height:29px;
+			color: rgb(75, 75, 75);		
+			padding-left:20px;
+			}
+		.everyShow-left-demo1{
+			margin-top:20px;
+			font-size: 16px;
+			}
+		.everyShow-left-demo2{
+			margin-top:10px;
+			font-size: 20px;
+			}
+		.everyShow-left-demo3{
+			
+			font-size: 18px;
+			line-height:50px;
+			height:50px;
+			margin-top:20px;
+			}
+		.everyShow-left-demo3 b{
+		    font-size:42px;
+			color:#4ab344;
+			font-weight:bold
+			}	
+		.everyShow-top-left a{
+			margin-top:40px;
+			margin-left:20px;
+			display:inline-block;
+			width:170px;
+			height:55px;
+			background-color:#49900F;
+			color:#FFF;
+			line-height:55px;
+			text-align:center;
+			text-decoration:none;
+			}			 
+	 	/*******右边******/ 
+	 .everyShow-top-right{
+		 position:absolute;
+		 right:20px;
+		 }
+	 .everyShow-top-right img{
+		 width:890px;
+		 height:280px;
+		 }
+		 /***************底部，还要做个特效******/ 
+	 .shop-everyShow-bottom{
+		 width:1200px;
+		 height:220px;
+		 text-align:center;
+		 }
+	.shop-everyShow-bottom>div{
+		width:255px;
+		height:200px;
+		display:inline-block;
+		margin:10px 20px;
+		overflow:hidden;
+		position:relative;
+		}
+	.shop-everyShow-bottom>div>img{
+		width:255px;
+		height:200px;
+		}	
+		
+	.shop-everyShow-bottom>div>a{
+		width:120px;
+		height:50px;
+		line-height:50px;
+		position:absolute;
+		top:90px;
+		opacity:0.9;
+		border-radius:5px;
+		left:100px;
+		color:#FFF;
+		background-color:#F00;
+		display:none;
+		cursor:pointer;
+		}
+			
+	.shop-everyShow-bottom div span{
+		display:inline-block;
+		width:180px;
+		height:20px;
+		position:absolute;
+		right:0px;
+		bottom:0px;
+		color:#FFF;
+		background-color:#4ab344;
+		}		
+		 /***************特效,(还要修改)******/ 
+	.shop-everyShow-bottom div img{
+		-webkit-transition: transform 1s;
+		-moz-transition: transform 1s;
+		-ms-transform: transform 1s;
+		-o-transform: transform 1s;
+		transform: transform 1s;
+		}
+	.shop-everyShow-bottom div:hover img{
+		-webkit-transform:scale(1.1);
+		-moz-transform:scale(1.1);
+		-ms-transform:scale(1.1);
+		-o-transform:scale(1.1);
+		transform:scale(1.1);
+		}
+	.shop-everyShow-bottom div:hover a{
+			display:inline-block
+	}				
+	   /*******************************************************************************生活分类***************************************************/ 
+	   
+	 .shop-daliy-body{
+		width:1200px;
+		height:610px;
+		margin:auto;
+			 }
+		 .show-daliy-bg{
+			width:1200px;
+			height:610px;
+			margin:auto;
+			position:relative
+		}
+		.show-daliy-left{
+			position:absolute;
+			display:inline-block;
+			width:300px;
+			height:500px;
+			border:1px solid #FFF;
+			top:30px;
+			left:40px;
+		}
+		.show-daliy-left img{
+			width:300px;
+			height:440px;
+		}
+		.show-daliy-left label{
+			display:inline-block;
+			width:300px;
+			background-color:#4ab344;
+			color:#ffffff;
+			height:60px;
+			line-height:60px;
+			text-align:center
+		}
+		.daliy-list{
+			position:absolute;
+			top:10px;
+			left:370px;
+			width:760px;
+			min-height:550px;
+			list-style:none;
+			border:1px solid #FFF;
+			overflow:hidden;
+		}
+					
+		.daliy-list>div{
+			float:left;
+			width:241px;
+			height:270px;
+			border:1px solid #FFF;
+			position:relative;
+			margin-left:10px;
+			margin-top:20px;
+			border-radius:5px;
+		}
+		 /***************特效,(还要修改)******/ 
+		.daliy-list div img{
+			-webkit-transition: transform 1s;
+			-moz-transition: transform 1s;
+			-ms-transform: transform 1s;
+			-o-transform: transform 1s;
+			transform: transform 1s;
+			
+			}
+		.daliy-list div:hover img{
+			-webkit-transform:scale(1.1);
+			-moz-transform:scale(1.1);
+			-ms-transform:scale(1.1);
+			-o-transform:scale(1.1);
+			transform:scale(1.1);
+			}
+			
+			
+		.daliy-list>div>img{
+			border-radius:2px;
+			width:241px;
+			height:220px;
+			border-radius:3px;
+		}		
+		.daliy-list>div>font{
+			position:absolute;
+			bottom:30px;
+			right:80px;
+			width:80px;
+			background-color:#F00;
+			height:25px;
+			display:inline-block;
+			color:#FFF;
+			z-index:10;
+			text-align:center;
+			line-height:25px;
+			border-radius:3px;
+			cursor:pointer;
+		}
+		.daliy-list>div>span{
+			display:inline-block;
+			position:absolute;
+			width:200px;
+			font-size:14px;
+			height:60px;
+			line-height:30px;
+			background-color:rgba(255,255,255,0.9);
+			text-decoration:none;
+			color:#4ab344;
+			right:20px;
+			text-align:center;
+			bottom:30px;
+			border-radius:3px;
+		}
+	 /**********************************************************生活效果***************************************************/ 
+	.daliy-list li img{
+		-webkit-transition: transform 1s;
+		-moz-transition: transform 1s;
+		-ms-transform: transform 1s;
+		-o-transform: transform 1s;
+		transform: transform 1s;
+		}
+	.daliy-list li:hover img{
+		-webkit-transform:scale(1.1);
+		-moz-transform:scale(1.1);
+		-ms-transform:scale(1.1);
+		-o-transform:scale(1.1);
+		transform:scale(1.1);
+		}		
+	 /*******************************************************************************分栏***************************************************/ 
+	.shop-bg-show{
+		background:url(../images/shop-bg05.jpg) no-repeat 0px 0px fixed;
+	    width:100%;
+		height:240px;
+		margin:auto;
+		margin-top:100px;
+		background-size:cover;
+		color:white;
+		text-align:center;
+		font-size:36px;
+	}
+	.shop-bg-show>div{
+	    padding-top:80px;
+	   
+	}
+	
+	 /*******************************************************************************鲜花***************************************************/ 
+	 .shop-flowers-body{
+		width:1200px;
+		height:670px;
+		margin:auto;
+			 }
+		 .show-flowers-bg{
+			width:1200px;
+			height:610px;
+			margin:auto;
+			position:relative
+		}
+		.show-flowers-left{
+			position:absolute;
+			display:inline-block;
+			width:300px;
+			height:500px;
+			border:1px solid #FFF;
+			top:30px;
+			left:40px;
+		}
+		.show-flowers-left img{
+			width:300px;
+			height:440px;
+		}
+		.show-flowers-left label{
+			display:inline-block;
+			width:300px;
+			background-color:#4ab344;
+			color:#ffffff;
+			height:60px;
+			line-height:60px;
+			text-align:center
+		}
+		.flowers-list{
+			position:absolute;
+			top:10px;
+			left:370px;
+			width:760px;
+			height:550px;
+			list-style:none;
+			border:1px solid #FFF;
+		}
+					
+		.flowers-list div{
+			float:left;
+			width:241px;
+			height:270px;
+			border:1px solid #FFF;
+			position:relative;
+			margin-left:10px;
+			margin-top:15px;
+			border-radius:5px;
+		}
+		
+		.flowers-list div img{
+			-webkit-transition: transform 1s;
+			-moz-transition: transform 1s;
+			-ms-transform: transform 1s;
+			-o-transform: transform 1s;
+			transform: transform 1s;
+			
+			}
+		.flowers-list div:hover img{
+			-webkit-transform:scale(1.1);
+			-moz-transform:scale(1.1);
+			-ms-transform:scale(1.1);
+			-o-transform:scale(1.1);
+			transform:scale(1.1);
+			}
+		.flowers-list div img{
+			border-radius:2px;
+			width:241px;
+			height:220px;
+			border-radius:3px
+		}		
+		.flowers-list div font{
+			position:absolute;
+			bottom:30px;
+			right:80px;
+			width:80px;
+			background-color:#F00;
+			height:25px;
+			display:inline-block;
+			color:#FFF;
+			z-index:10;
+			text-align:center;
+			line-height:25px;
+			border-radius:3px;
+			cursor: pointer;
+		}
+		.flowers-list div span{
+			display:inline-block;
+			position:absolute;
+			width:200px;
+			font-size:14px;
+			height:60px;
+			line-height:30px;
+			background-color:#F0F1F1;
+			text-decoration:none;
+			color:#4ab344;
+			right:20px;
+			text-align:center;
+			bottom:30px;
+			border-radius:3px;
+		}
+	  /*******************************************************购物车***************************************************/ 
+	 .shop-cart{
+		 width:50px;
+		 height:50px;
+		 right:10px;
+		 bottom:160px;
+		 line-height:50px;
+		 border:2px solid #4ab344;
+		 position:fixed;
+		 display:none;
+		 border-radius:5px;
+		 cursor:pointer
+		 }
+	 	.go-top{
+		 width:50px;
+		 height:50px;
+		 right:10px;
+		 bottom:100px;
+		 line-height:50px;
+		 border:2px solid #4ab344;
+		 position:fixed;
+		 display:none;
+		 border-radius:5px;
+		}
+		 /*******************************************************************************蔬菜分类***************************************************/ 
+		.shop-vegetables-body{
+		width:1200px;
+		height:610px;
+		margin:auto;
+			 }
+		 .show-vegetables-bg{
+			width:1200px;
+			height:610px;
+			margin:auto;
+			position:relative
+		}
+		.show-vegetables-left{
+			position:absolute;
+			display:inline-block;
+			width:300px;
+			height:500px;
+			border:1px solid #FFF;
+			top:30px;
+			left:40px;
+		}
+		.show-vegetables-left img{
+			width:300px;
+			height:452px;
+		}
+		.show-vegetables-left label{
+			display:inline-block;
+			width:300px;
+			background-color:#4ab344;
+			color:#ffffff;
+			height:60px;
+			line-height:60px;
+			text-align:center
+		}
+			.vegetables-list{
+			position:absolute;
+			top:10px;
+			left:370px;
+			width:760px;
+			height:550px;
+			list-style:none;
+			border:1px solid #FFF;
+		}
+					
+		.vegetables-list div{
+			float:left;
+			width:241px;
+			height:270px;
+			border:1px solid #FFF;
+			position:relative;
+			margin-left:10px;
+			margin-top:20px;
+			border-radius:5px;
+		}
+		 /***************特效,(还要修改)******/ 
+		.vegetables-list div img{
+			-webkit-transition: transform 1s;
+			-moz-transition: transform 1s;
+			-ms-transform: transform 1s;
+			-o-transform: transform 1s;
+			transform: transform 1s;
+			
+			}
+		.vegetables-list div:hover img{
+			-webkit-transform:scale(1.1);
+			-moz-transform:scale(1.1);
+			-ms-transform:scale(1.1);
+			-o-transform:scale(1.1);
+			transform:scale(1.1);
+			}
+		
+		.vegetables-list div img{
+			border-radius:2px;
+			width:241px;
+			height:220px;
+			border-radius:3px;
+			overflow:hidden;
+		}		
+		.vegetables-list div font{
+			position:absolute;
+			bottom:30px;
+			right:80px;
+			width:80px;
+			background-color:#F00;
+			height:25px;
+			display:inline-block;
+			color:#FFF;
+			z-index:10;
+			text-align:center;
+			line-height:25px;
+			border-radius:3px;
+			cursor: pointer;
+			
+		}
+		.vegetables-list div span{
+			display:inline-block;
+			position:absolute;
+			width:200px;
+			font-size:14px;
+			height:60px;
+			line-height:30px;
+			background-color:rgba(255,255,255,0.8);
+			text-decoration:none;
+			color:#4ab344;
+			right:20px;
+			text-align:center;
+			bottom:30px;
+			border-radius:3px;	
+		}
+		@keyframes ma1
+			{
+			0%   {top: 70px;}
+			100% {top: 0px;}
+			}
+			
+		 /***************************购物车**********************/	
+			
+		#tb thead tr td{
+			width:74px;
+			text-align:center;
+			border-bottom:1px solid #FFFFFF;
+			height:40px;
+			line-height:40px;
+			font-size:16px;
+			}
+		#tb tbody tr td{
+			text-align:center;
+			border-bottom:1px dashed #FFFFFF;
+			height:30px;
+			line-height:30px;
+			font-size:14px;
+			}
+				
+		#showdow{
+			position:fixed;
+			top:50px; 
+			right:0px; 
+			margin-left:-600px; 
+			width:370px; 
+			height:600px; 
+			background-color:rgba(0,0,0,.9); 
+			display:none; 
+			border-radius:5px;
+			color:#FFF;
+			z-index:999;
+		}
+		.showdow-title{
+			height:80px; 
+			line-height:80px; 
+			font-size:30px;  
+			text-align:center; 
+			border-bottom:1px solid #FFF
+		}
+				
+		#tb thead tr td{
+			text-align:center;
+			border-bottom:1px solid #FFFFFF;
+			height:40px;
+			line-height:40px;
+			font-size:16px;
+			}
+		.showdow-sroll{
+			 width:380px;
+			 height:370px;
+			 overflow-y:auto;
+		}	
+		
+		#tb tbody tr td{
+			text-align:center;
+			border-bottom:1px dashed #FFFFFF;
+			height:30px;
+			line-height:30px;
+			font-size:14px;
+			}			  
+		#tb tr td:nth-child(1){
+			 width:52px;
+		}
+		#tb tr td:nth-child(2){
+			 width:160px;
+			text-align:left;
+		}
+		#tb tr td:nth-child(3){
+			 width:52px;
+		}
+		#tb tr td:nth-child(4){
+			 width:52px;
+		}
+		#tb tr td:nth-child(5) button{
+			background-color:rgba(0,0,0,0.9);
+			color:#FFF;
+			cursor:pointer;
+			border:none
+		}
+		
+		.shop-all-money{
+			border-top:1px solid #FFF; 
+			position:absolute; 
+			width:100%;
+			bottom:50px;
+		}
+		.shop-all-money span{
+			 width:170px; 
+			 display:inline-block; 
+			 height:40px; 
+			 line-height:40px; 
+			 text-align:center
+		}
+		 .shop-all-money label{
+		 	font-size:30px
+		 } 	
+		 
+		 .shop-all-btn{
+		 	position:absolute; left:80px; width:230px; height:40px; line-height:40px;
+		 }	
+		 
+		  .shop-all-btn a{
+		 	display:inline-block; 
+		 	width:200px; 
+		 	height:30px; 
+		 	background-color:#966; 
+		 	text-align:center; 
+		 	line-height:30px; 
+		 	border-radius:3px;
+		    cursor:pointer
+		 } 	 
+		 
+		 
+		 
+	#alert-dialog{
+			width:600px;
+			height:128px;
+			line-height: 128px;
+			text-align: center;
+			color:#963;
+			border:1px solid #faebcc;
+			border-radius: 12px;
+			background-color:#fcf8e3;
+			position:fixed;
+			left:50%;
+		    margin-left:-128px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+
+			-webkit-transition: all 0.3s linear;
+			-o-transition: all 0.3s linear;
+			transition: all 0.3s linear;
+		}
+		/*隐藏样式*/
+		.hide{
+			top:-128px;
+			margin-top: 0px;
+		}
+		/*显示样式*/
+		.show{
+			top:50%;
+		}
+
+
+
+ 	/***锚记链接标签*****/
+	
+	.shop-body-title{
+		width:1200px;
+		height:150px;
+		margin:auto;
+		}	
+	.shop-body-title a{
+		position:relative;
+		display:inline-block;
+		width:360px;
+		height:60px;
+		border: 1px solid #4ab344;
+		margin-top:50px;
+		margin-left:26px;
+		border-radius:3px;
+		}
+		.title-firstImg{
+			width:30px;
+			height:30px;
+			position:absolute;
+			top:15px;
+			left:30px;
+			}
+		.title-text{
+			position:absolute;
+			width:120px;
+			left:140px;
+			top:20px;
+			font-size:14px;
+			color:#666666
+			}
+		
+			.title-secendImg{
+				position:absolute;
+				width:30px;
+				height:30px;
+				top:15px;
+				left:290px
+				}
+			
+		/**轮播*****/		
+	  .shop-body-bl {
+        width:100%;
+		background:url(../images/shop-Bg1.jpg);
+		background-size:cover;
+		height:600px
+      }		
+	  /**每日特卖*****/
+	  .shop-everyday-title{
+		  padding-top:30px;
+		  width:1000px;
+		  margin:auto;
+		  height:150px;
+		  }
+	  .shop-everyday-titleHead{
+		  text-align:center;
+		  font-size:31px;
+		  margin-top:30px
+		  }
+		  .shop-everyday-titleHead b{
+			  color:#4ab344}
+	  .shop-everyday-titleHead span{
+		  color: rgb(231, 231, 231);
+		  }	
+	  .shop-everyday-titleFoot{
+		   text-align:center;
+		   color: rgb(136, 136, 136);
+		   line-height:36px;
+		   font-size:16px
+		  }	
+	  /**每日特卖内容*****/
+	 .shop-everyShow{
+		 width:1200px;
+		 height:520px;
+		 margin:auto;
+		 }
+	 .shop-everyShow-top{
+		 position:relative;
+		 height:300px;
+		 }
+		/*******左边******/ 
+	 	.everyShow-top-left{
+			 width:250px;
+			 position:absolute;
+			 height:280px;
+			 left:20px;
+		 }
+		
+		.everyShow-top-left>div{
+			line-height:29px;
+			color: rgb(75, 75, 75);		
+			padding-left:20px;
+			}
+		.everyShow-left-demo1{
+			margin-top:20px;
+			font-size: 16px;
+			}
+		.everyShow-left-demo2{
+			margin-top:10px;
+			font-size: 20px;
+			}
+		.everyShow-left-demo3{
+			
+			font-size: 18px;
+			line-height:50px;
+			height:50px;
+			margin-top:20px;
+			}
+		.everyShow-left-demo3 b{
+		    font-size:42px;
+			color:#4ab344;
+			font-weight:bold
+			}	
+		.everyShow-top-left a{
+			margin-top:40px;
+			margin-left:20px;
+			display:inline-block;
+			width:170px;
+			height:55px;
+			background-color:#49900F;
+			color:#FFF;
+			line-height:55px;
+			text-align:center;
+			text-decoration:none;
+			}			 
+	 	/*******右边******/ 
+	 .everyShow-top-right{
+		 position:absolute;
+		 right:20px;
+		 }
+	 .everyShow-top-right img{
+		 width:890px;
+		 height:280px;
+		 }
+		 /***************底部，还要做个特效******/ 
+	 .shop-everyShow-bottom{
+		 width:1200px;
+		 height:220px;
+		 text-align:center;
+		 }
+	.shop-everyShow-bottom>div{
+		width:255px;
+		height:200px;
+		display:inline-block;
+		margin:10px 20px;
+		overflow:hidden;
+		position:relative
+		}
+	.shop-everyShow-bottom>div>img{
+		width:255px;
+		height:200px
+		}	
+		
+	.shop-everyShow-bottom>div>a{
+		width:120px;
+		height:50px;
+		line-height:50px;
+		position:absolute;
+		top:90px;
+		opacity:0.9;
+		border-radius:5px;
+		left:100px;
+		color:#FFF;
+		background-color:#F00;
+		display:none;
+		cursor:pointer;
+		}
+			
+	.shop-everyShow-bottom div span{
+		display:inline-block;
+		width:180px;
+		height:20px;
+		position:absolute;
+		right:0px;
+		bottom:0px;
+		color:#FFF;
+		background-color:#4ab344;
+		}		
+		 /***************特效,(还要修改)******/ 
+	.shop-everyShow-bottom div img{
+		-webkit-transition: transform 1s;
+		-moz-transition: transform 1s;
+		-ms-transform: transform 1s;
+		-o-transform: transform 1s;
+		transform: transform 1s;
+		}
+	.shop-everyShow-bottom div:hover img{
+		-webkit-transform:scale(1.1);
+		-moz-transform:scale(1.1);
+		-ms-transform:scale(1.1);
+		-o-transform:scale(1.1);
+		transform:scale(1.1);
+		}
+	.shop-everyShow-bottom div:hover a{
+			display:inline-block
+	}				
+	   /*******************************************************************************生活分类***************************************************/ 
+	   
+	 .shop-daliy-body{
+		width:1200px;
+		height:610px;
+		margin:auto;
+			 }
+		 .show-daliy-bg{
+			width:1200px;
+			height:610px;
+			margin:auto;
+			position:relative
+		}
+		.show-daliy-left{
+			position:absolute;
+			display:inline-block;
+			width:300px;
+			height:500px;
+			border:1px solid #FFF;
+			top:30px;
+			left:40px;
+		}
+		.show-daliy-left img{
+			width:300px;
+			height:440px;
+		}
+		.show-daliy-left label{
+			display:inline-block;
+			width:300px;
+			background-color:#4ab344;
+			color:#ffffff;
+			height:60px;
+			line-height:60px;
+			text-align:center
+		}
+		.daliy-list{
+			position:absolute;
+			top:10px;
+			left:370px;
+			width:760px;
+			min-height:550px;
+			list-style:none;
+			border:1px solid #FFF;
+			overflow:hidden;
+		}
+					
+		.daliy-list>div{
+			float:left;
+			width:241px;
+			height:270px;
+			border:1px solid #FFF;
+			position:relative;
+			margin-left:10px;
+			margin-top:20px;
+			border-radius:5px;
+		}
+		 /***************特效,(还要修改)******/ 
+		.daliy-list div img{
+			-webkit-transition: transform 1s;
+			-moz-transition: transform 1s;
+			-ms-transform: transform 1s;
+			-o-transform: transform 1s;
+			transform: transform 1s;
+			
+			}
+		.daliy-list div:hover img{
+			-webkit-transform:scale(1.1);
+			-moz-transform:scale(1.1);
+			-ms-transform:scale(1.1);
+			-o-transform:scale(1.1);
+			transform:scale(1.1);
+			}
+			
+			
+		.daliy-list>div>img{
+			border-radius:2px;
+			width:241px;
+			height:220px;
+			border-radius:3px;
+		}		
+		.daliy-list>div>font{
+			position:absolute;
+			bottom:30px;
+			right:80px;
+			width:80px;
+			background-color:#F00;
+			height:25px;
+			display:inline-block;
+			color:#FFF;
+			z-index:10;
+			text-align:center;
+			line-height:25px;
+			border-radius:3px;
+			cursor:pointer;
+		}
+		.daliy-list>div>span{
+			display:inline-block;
+			position:absolute;
+			width:200px;
+			font-size:14px;
+			height:60px;
+			line-height:30px;
+			background-color:rgba(255,255,255,0.9);
+			text-decoration:none;
+			color:#4ab344;
+			right:20px;
+			text-align:center;
+			bottom:30px;
+			border-radius:3px;
+		}
+	 /**********************************************************生活效果***************************************************/ 
+	.daliy-list li img{
+		-webkit-transition: transform 1s;
+		-moz-transition: transform 1s;
+		-ms-transform: transform 1s;
+		-o-transform: transform 1s;
+		transform: transform 1s;
+		}
+	.daliy-list li:hover img{
+		-webkit-transform:scale(1.1);
+		-moz-transform:scale(1.1);
+		-ms-transform:scale(1.1);
+		-o-transform:scale(1.1);
+		transform:scale(1.1);
+		}		
+	 /*******************************************************************************分栏***************************************************/ 
+	.shop-bg-show{
+		background:url(../images/shop-bg05.jpg) no-repeat 0px 0px fixed;
+	    width:100%;
+		height:240px;
+		margin:auto;
+		margin-top:100px;
+		background-size:cover;
+		color:white;
+		text-align:center;
+		font-size:36px;
+	}
+	.shop-bg-show>div{
+	    padding-top:80px;
+	   
+	}
+	
+	 /*******************************************************************************鲜花***************************************************/ 
+	 .shop-flowers-body{
+		width:1200px;
+		height:670px;
+		margin:auto;
+			 }
+		 .show-flowers-bg{
+			width:1200px;
+			height:610px;
+			margin:auto;
+			position:relative
+		}
+		.show-flowers-left{
+			position:absolute;
+			display:inline-block;
+			width:300px;
+			height:500px;
+			border:1px solid #FFF;
+			top:30px;
+			left:40px;
+		}
+		.show-flowers-left img{
+			width:300px;
+			height:440px;
+		}
+		.show-flowers-left label{
+			display:inline-block;
+			width:300px;
+			background-color:#4ab344;
+			color:#ffffff;
+			height:60px;
+			line-height:60px;
+			text-align:center
+		}
+		.flowers-list{
+			position:absolute;
+			top:10px;
+			left:370px;
+			width:760px;
+			height:550px;
+			list-style:none;
+			border:1px solid #FFF;
+		}
+					
+		.flowers-list div{
+			float:left;
+			width:241px;
+			height:270px;
+			border:1px solid #FFF;
+			position:relative;
+			margin-left:10px;
+			margin-top:15px;
+			border-radius:5px;
+		}
+		
+		.flowers-list div img{
+			-webkit-transition: transform 1s;
+			-moz-transition: transform 1s;
+			-ms-transform: transform 1s;
+			-o-transform: transform 1s;
+			transform: transform 1s;
+			
+			}
+		.flowers-list div:hover img{
+			-webkit-transform:scale(1.1);
+			-moz-transform:scale(1.1);
+			-ms-transform:scale(1.1);
+			-o-transform:scale(1.1);
+			transform:scale(1.1);
+			}
+		.flowers-list div img{
+			border-radius:2px;
+			width:241px;
+			height:220px;
+			border-radius:3px
+		}		
+		.flowers-list div font{
+			position:absolute;
+			bottom:30px;
+			right:80px;
+			width:80px;
+			background-color:#F00;
+			height:25px;
+			display:inline-block;
+			color:#FFF;
+			z-index:10;
+			text-align:center;
+			line-height:25px;
+			border-radius:3px;
+			cursor: pointer;
+		}
+		.flowers-list div span{
+			display:inline-block;
+			position:absolute;
+			width:200px;
+			font-size:14px;
+			height:60px;
+			line-height:30px;
+			background-color:#F0F1F1;
+			text-decoration:none;
+			color:#4ab344;
+			right:20px;
+			text-align:center;
+			bottom:30px;
+			border-radius:3px;
+		}
+	  /*******************************************************购物车***************************************************/ 
+	 .shop-cart{
+		 width:50px;
+		 height:50px;
+		 right:10px;
+		 bottom:160px;
+		 line-height:50px;
+		 border:2px solid #4ab344;
+		 position:fixed;
+		 display:none;
+		 border-radius:5px;
+		 cursor:pointer
+		 }
+	 	.go-top{
+		 width:50px;
+		 height:50px;
+		 right:10px;
+		 bottom:100px;
+		 line-height:50px;
+		 border:2px solid #4ab344;
+		 position:fixed;
+		 display:none;
+		 border-radius:5px;
+		}
+		 /*******************************************************************************蔬菜分类***************************************************/ 
+		.shop-vegetables-body{
+		width:1200px;
+		height:610px;
+		margin:auto;
+			 }
+		 .show-vegetables-bg{
+			width:1200px;
+			height:610px;
+			margin:auto;
+			position:relative
+		}
+		.show-vegetables-left{
+			position:absolute;
+			display:inline-block;
+			width:300px;
+			height:500px;
+			border:1px solid #FFF;
+			top:30px;
+			left:40px;
+		}
+		.show-vegetables-left img{
+			width:300px;
+			height:452px;
+		}
+		.show-vegetables-left label{
+			display:inline-block;
+			width:300px;
+			background-color:#4ab344;
+			color:#ffffff;
+			height:60px;
+			line-height:60px;
+			text-align:center
+		}
+			.vegetables-list{
+			position:absolute;
+			top:10px;
+			left:370px;
+			width:760px;
+			height:550px;
+			list-style:none;
+			border:1px solid #FFF;
+		}
+					
+		.vegetables-list div{
+			float:left;
+			width:241px;
+			height:270px;
+			border:1px solid #FFF;
+			position:relative;
+			margin-left:10px;
+			margin-top:20px;
+			border-radius:5px;
+		}
+		 /***************特效,(还要修改)******/ 
+		.vegetables-list div img{
+			-webkit-transition: transform 1s;
+			-moz-transition: transform 1s;
+			-ms-transform: transform 1s;
+			-o-transform: transform 1s;
+			transform: transform 1s;
+			
+			}
+		.vegetables-list div:hover img{
+			-webkit-transform:scale(1.1);
+			-moz-transform:scale(1.1);
+			-ms-transform:scale(1.1);
+			-o-transform:scale(1.1);
+			transform:scale(1.1);
+			}
+		
+		.vegetables-list div img{
+			border-radius:2px;
+			width:241px;
+			height:220px;
+			border-radius:3px;
+			overflow:hidden;
+		}		
+		.vegetables-list div font{
+			position:absolute;
+			bottom:30px;
+			right:80px;
+			width:80px;
+			background-color:#F00;
+			height:25px;
+			display:inline-block;
+			color:#FFF;
+			z-index:10;
+			text-align:center;
+			line-height:25px;
+			border-radius:3px;
+			cursor: pointer;
+			
+		}
+		.vegetables-list div span{
+			display:inline-block;
+			position:absolute;
+			width:200px;
+			font-size:14px;
+			height:60px;
+			line-height:30px;
+			background-color:rgba(255,255,255,0.8);
+			text-decoration:none;
+			color:#4ab344;
+			right:20px;
+			text-align:center;
+			bottom:30px;
+			border-radius:3px;	
+		}
+		@keyframes ma1
+			{
+			0%   {top: 70px;}
+			100% {top: 0px;}
+			}
+			
+		 /***************************购物车**********************/	
+			
+		#tb thead tr td{
+			width:74px;
+			text-align:center;
+			border-bottom:1px solid #FFFFFF;
+			height:40px;
+			line-height:40px;
+			font-size:16px;
+			}
+		#tb tbody tr td{
+			text-align:center;
+			border-bottom:1px dashed #FFFFFF;
+			height:30px;
+			line-height:30px;
+			font-size:14px;
+			}
+				
+		#showdow{
+			position:fixed;
+			top:50px; 
+			right:0px; 
+			margin-left:-600px; 
+			width:370px; 
+			height:600px; 
+			background-color:rgba(0,0,0,.9); 
+			display:none; 
+			border-radius:5px;
+			color:#FFF;
+			z-index:999;
+		}
+		.showdow-title{
+			height:80px; 
+			line-height:80px; 
+			font-size:30px;  
+			text-align:center; 
+			border-bottom:1px solid #FFF
+		}
+				
+		#tb thead tr td{
+			text-align:center;
+			border-bottom:1px solid #FFFFFF;
+			height:40px;
+			line-height:40px;
+			font-size:16px;
+			}
+		.showdow-sroll{
+			 width:370px;
+			 height:370px;
+			 overflow-y:auto;
+		}	
+		#tb tbody tr td{
+			text-align:center;
+			border-bottom:1px dashed #FFFFFF;
+			height:30px;
+			line-height:30px;
+			font-size:14px;
+			}			  
+		#tb tr td:nth-child(1){
+			 width:52px;
+		}
+		#tb tr td:nth-child(2){
+			 width:160px;
+			text-align:left;
+		}
+		#tb tr td:nth-child(3){
+			 width:52px;
+		}
+		#tb tr td:nth-child(4){
+			 width:52px;
+		}
+		#tb tr td:nth-child(5) button{
+			background-color:rgba(0,0,0,0.9);
+			color:#FFF;
+			cursor:pointer;
+			border:none
+		}
+		
+		.shop-all-money{
+			border-top:1px solid #FFF; 
+			position:absolute; 
+			width:100%;
+			bottom:50px;
+		}
+		.shop-all-money span{
+			 width:170px; 
+			 display:inline-block; 
+			 height:40px; 
+			 line-height:40px; 
+			 text-align:center
+		}
+		 .shop-all-money label{
+		 	font-size:30px
+		 } 	
+		 
+		 .shop-all-btn{
+		 	position:absolute; left:80px; width:230px; height:40px; line-height:40px;
+		 }	
+		 
+		  .shop-all-btn a{
+		 	display:inline-block; 
+		 	width:200px; 
+		 	height:30px; 
+		 	background-color:#966; 
+		 	text-align:center; 
+		 	line-height:30px; 
+		 	border-radius:3px;
+		    cursor:pointer
+		 } 	 
+		 
+		 
+		 
+	#alert-dialog{
+			width:600px;
+			height:128px;
+			line-height: 128px;
+			text-align: center;
+			color:#963;
+			border:1px solid #faebcc;
+			border-radius: 12px;
+			background-color:#fcf8e3;
+			position:fixed;
+			left:50%;
+		    margin-left:-128px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+
+			-webkit-transition: all 0.3s linear;
+			-o-transition: all 0.3s linear;
+			transition: all 0.3s linear;
+		}
+		/*隐藏样式*/
+		.hide{
+			top:-128px;
+			margin-top: 0px;
+		}
+		/*显示样式*/
+		.show{
+			top:50%;
+		}
+		 	 	  	  		  		 	 	 	

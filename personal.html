@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>维纳阳光</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/personal.css"/>
+    <link rel="stylesheet" href="css/navfoot.css"/>
+</head>
+<body>
+
+<!-- 导航部分 -->
+	<a name="head"></a>
+<div class="head">
+        <div class="head-main">
+            <div class="head-title">
+              <a href="index.html"  >维纳阳光</a>
+            </div>
+            <ul>
+                <li><a href="index.html"  >首页</a></li>
+                <li><a href="shop.html">惠服务</a></li>
+                <li><a href="life.html"  >生活圈</a></li>
+                <li><a href="activity.html" >活动社</a></li>
+                <li><a href="club.html"  >俱乐部</a></li>
+                <li><a href="wuye.html"  >物业服务</a></li>
+            </ul>
+            <div class="head-login">
+                <div style="display:block"><a href="login.html"  style='color: #4ab344'>登录</a>|<a href="wuye.jsp"  >关于我们</a></div>
+                <div style="display:none">
+                    <label style="font-weight: bold">欢迎你</label>
+                    <span class="ownerName"></span>
+                    <label>|<a href="personal.html"  >个人中心</a>|</label>
+                    <a href="javascript:;" class="linkLogout">注销</a>
+                </div> 
+            </div>
+        </div>
+
+    </div>
+
+<!-- 内容 -->
+<div class="person-bg">
+	<div class="content">
+		<!-- 个人中心背景 -->
+		<div class="person-left">
+			
+			<div class="left-port">
+				<div>
+					<img src="" class="myPort" id="ownerImage">
+				</div>
+				<p class="ownerName"></p>
+				<p class="ownerHomeNo">01-503室业主</p>
+			</div>
+			
+			<div class="left-count">
+				<div class="left-act">
+					<p>24</p>
+					<p>活动</p>
+				</div>
+				<div class="left-line"></div>
+				<div class="left-act">
+					<p>12</p>
+					<p>帖子</p>
+				</div>
+				<div class="left-line"></div>
+				<div class="left-act">
+					<p>37</p>
+					<p>团购</p>
+				</div>
+			</div>
+			
+			<div class="left-moreInfo">
+				<h2>申请认证</h2>
+				<hr>
+				<p>完善我的个人资料&gt;&gt;</p>
+			</div>
+			
+			<div class="left-code">
+				<img src="images/erweima.png" class="myerweima">
+			</div>
+		</div>
+		<div class="person-right">
+			<div class="right-top">
+				<div class="active">我的团购</div>
+				<div class="">我的消息</div>
+				<div class="">我的活动</div>
+				<div class="">我的帖子</div>
+				<div class="">修改密码</div>
+				<div class="">联系物业</div>
+			</div>
+
+			<div class="person-center">
+				<div class="active">
+					<div class="right-title">我的团购</div>
+
+					<div class="myorders">
+						<div style="text-align: center;line-height: 50px; ">暂无团购。</div>
+						<table style="display: none;">
+							<thead>
+								<tr>
+									<th>商品名称</th>
+									<th>商品</th>
+									<th>商品价格</th>
+									<th>商品数量</th>
+									<th>下单时间</th>
+									<th>订单状态</th>
+								</tr> 
+							</thead>
+							<tbody id="tbOrder"></tbody>
+						</table>
+					</div>
+
+					<div class="pageOrder">
+					</div>
+				</div>
+
+				<div class="">
+					<div class="right-title">我的消息</div>
+						
+					<div class="person-message">
+						<div class="mymessage" style="text-align: center;line-height: 50px; ">
+							暂无消息。
+						</div>	
+					</div>
+				</div>
+
+				<div class="">
+					<div class="right-title">我的活动</div>
+					
+					<div class="person-activity">
+						<div class="activity-item" style="text-align: center;line-height: 50px; ">
+							暂无活动。
+						</div>
+					</div>
+				</div>
+
+				<div class="">
+					<div class="right-title">我的帖子</div>
+
+					<div class="tabtitle">发表的帖子</div>
+					<div class="person-tab">
+						
+						<div class="mytab" style="text-align: center;line-height: 50px; ">
+							暂无帖子。
+						</div>
+					</div>
+				</div>
+				<!--  -->
+
+				<div class="">
+					<div class="right-title">修改密码</div>
+
+					<div class="editCenter">
+						<div>原始密码：<input type="text" id="myOldPsd"><span class="item-normal">(*原始密码不正确)</span></div>
+						<div>修改密码：<input type="password" id="myNewPsd"><span class="item-normal">(*密码必须为6位)</span></div>
+						<div>确认密码：<input type="password" id="confirmPsd"><span class="item-normal">(*两次密码必须一致)</span></div>
+						<div id="editPsdBtn">确认修改</div>
+						<div style="" id="loading">
+							<div style=""><img src="images/loading.gif"></div>
+						</div>
+	                  </div>
+				</div>
+				
+				<div class="">
+	                 <div class="right-title">联系物业</div>
+	                 <div class="person-wuye">
+	                     <table cellspacing="1" cellpadding="1" border="1">
+	                         <tbody><tr>
+		                         <td>各部门</td>
+		                         <td>联系方式</td>
+		                         <td>工作时间</td>
+		                     </tr>
+		                     <tr>
+	                            <td>物业地址</td>
+	                            <td>小区六号楼101室</td>
+	                            <td>周一上午8点 至周日下午5点</td>
+	                         </tr>   
+	                         <tr>
+	                            <td>门卫电话</td>
+	                            <td>020-11225154</td>
+	                            <td>每天早上7点至晚上10点</td>
+	                         </tr>
+	                         <tr>
+	                            <td>医务室电话</td>
+	                            <td>020-5246923</td>
+	                            <td>全天在线</td>
+	                         </tr>
+	                         <tr>
+	                            <td>传达室电话</td>
+	                            <td>020-9774561</td>
+	                            <td>每天早上7点至晚上10点</td>
+	                         </tr>
+	                         <tr>
+	                            <td>保安室</td>
+	                            <td>020-4756231</td>
+	                            <td>每天早上7点至晚上10点</td>
+	                         </tr>
+	                         <tr>
+	                            <td>爱心救助站</td>
+	                            <td>020-96412214</td>
+	                            <td>周一上午8点 至周日下午5点</td>
+	                         </tr>
+	                         <tr>
+	                            <td>维修部</td>
+	                            <td>020-49871436</td>
+	                            <td>每天早上7点至晚上8点</td>
+	                         </tr>
+	                         <tr>
+	                            <td>保洁室</td>
+	                            <td>020-4569113</td>
+	                            <td>每天早上8点至晚上8点</td>
+	                         </tr>
+	                         <tr>
+	                            <td>投诉部</td>
+	                            <td>020-62584126</td>
+	                            <td>每天早上7点至晚上10点</td>
+	                         </tr>
+	                         <tr>
+	                            <td>缴费部</td>
+	                            <td>020-4795321</td>
+	                            <td>周一上午8点 至周日下午5点</td>
+	                         </tr>
+	                         <tr>
+	                            <td>活动部</td>
+	                            <td>020-4944571436</td>
+	                            <td>周一上午8点 至周日下午5点</td>
+	                         </tr>
+	                         <tr>
+	                            <td>宣传部</td>
+	                            <td>020-9641233</td>
+	                            <td>周一上午8点 至周日下午5点</td>
+	                         </tr>
+	                         <tr>
+	                            <td>安全部</td>
+	                            <td>020-75691233</td>
+	                            <td>全天在线</td>
+	                         </tr>
+	                     </tbody></table>
+	                 </div>
+	              </div>
+
+				<div class="">
+					<div class="right-title">完善资料</div>
+					<div class="editcenter">
+	                   <div class="editport">
+		                    <div>
+		                    	<img src="" class="myPort" id="changeImage">
+		                         <span class="edittouxiangtitle">修改头像</span>
+		                         <input type="file" style="display:none;" id="fileImg">
+		                    </div>
+		                 </div>
+		                 <div class="editfrm">
+							<table class="editinfo">
+							     <tbody><tr>
+							        <td>真实姓名：</td>
+							        <td><input type="text" value="" readonly="readonly" class="editName"></td>
+							     </tr>
+							     <tr>
+							         <td>身份证号:</td>
+							         <td><input type="text" value="" readonly="readonly" class="editIdNo"></td>
+							     </tr>
+							     <tr>
+							         <td>房间号：</td>
+							         <td><input type="text" value="" readonly="readonly" class="editHomeNo"></td>
+							     </tr>
+							     <tr>
+							         <td>昵称：</td>
+							         <td><input type="text" value="" id="myNickname"><span class="item-normal">(*请填写正确的昵称)</span></td>
+							     </tr>
+							     <tr>
+							         <td>手机号：</td>
+							         <td><input type="text" value="" id="myPhone"><span class="item-normal">(*请填写正确的手机号码)</span></td>
+							     </tr>
+							     <tr>
+							         <td>邮箱：</td>
+							         <td><input type="text" value="" id="myEmail"><span class="item-normal">(*请填写正确的邮箱号)</span></td>
+							     </tr>
+							     <tr>
+							         <td></td>
+							         <td><button class="btn-submit">提交修改</button><span id="successMess" style="display: none;">修改成功.</span></td>
+							     </tr>
+							</tbody></table>
+		                 </div>
+		                </div>
+					
+				</div>
+					
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--页脚部分-->
+<div>
+    <div class="foot">
+        <div class="foot-title">
+            <div>
+                <img src="images/tb1.png">
+                <p>工作时间<br>9:00-23:00</p>
+            </div>
+            <div>
+                <img src="images/tb2.png">
+                <p>申请保修<br>申请成功后联系你</p>
+            </div>
+            <div>
+                <img src="images/tb3.png">
+                <p>联系我们<br>020-0000000</p>
+            </div>
+            <div>
+                <img src="images/tb4.png">
+                <p>免费咨询<br>家里有问题请联系</p>
+            </div>
+        </div>
+        <div class="foot-copyright">©2016 网站样板—房地产 版权所有</div>
+        <div class="foot-copyright"><a href="#">手机版</a> | <a href="#">本站使用XX建站搭建</a> | <a href="#">管理登录</a></div>
+    </div>
+</div>
+
+<script src="lib/js/jquery.min.js"></script>
+<script src="lib/js/bootstrap.js"></script>
+<script src="util/globalSetting.js"></script>
+<script src="js/global.js"></script>
+<script src="js/personal.js"></script>
+<script type="text/javascript">
+	
+</script>
+
+</body>
+</html>

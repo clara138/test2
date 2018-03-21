@@ -1,0 +1,393 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+body{
+    /*font-family:å¾®è½¯é›…é»‘;*/
+    color: #F2F2F2;
+    min-width:1200px;
+}
+.content{
+    position: relative;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.content2{
+    min-width:1200px;
+    height:561px;
+}
+/*å¯¼èˆªæ */
+.nav-all{
+    position:absolute;
+    top:50px;
+    left:50%;
+    margin-left:-800px;
+    font-size:24px;
+    width:1600px;
+    overflow:hidden;
+}
+.nav-left{
+    color:#4ab344;
+    font-size:32px;
+    float:left;
+}
+.nav-right{
+    float:left;
+    margin-left:300px;
+    font-size:16px;
+
+}
+.nav-title{
+    margin-top:170px;
+    height:79px;
+    font-weight: bold;
+    text-align: center;
+    font-size:60px;
+}
+.nav-right a{
+    display:inline-block;
+    height:50px;
+    width:100px;
+    font-size:16px;
+    color: rgb(204, 204, 204);
+    line-height:50px;
+}
+.nav-right a:hover{
+    color: #4ab344;
+}
+.nav-intro{
+    margin-top:40px;
+    text-align:center;
+    font-size:18px;
+}
+/*æ•°å­—*/
+.demo {
+    text-align:center;
+    margin-top:120px;
+}
+.demo>div{
+    display: inline-block;
+    width:300px;
+    margin-right:50px;
+}
+span.counter {
+    display: block;
+    margin: 20px auto;
+    font-size: 64px;
+    font-weight: bold;
+}
+.nav-denglu{
+    color: rgb(204, 204, 204);
+    width: 200px;
+    float:left;
+    margin-left:100px;
+    font-size:16px;
+    height:30px;
+    text-align:center;
+    border:1px solid #red;
+}
+.nav-denglu a{
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+}
+.nav-denglu a:hover{
+    color: #4ab344;
+}
+.nav-denglu>div{
+    top: 44px;
+    font-size:16px;
+    width: 280px;
+    padding-top:14px;
+}
+
+
+/*内容一*/
+.section1{
+    width: 100%;height: 450px;
+    padding-top: 30px;
+}
+.se1-div{
+    width: 1200px;
+    margin: auto;
+}
+.se1-title{
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0 85px 0;
+    font-weight: bold;
+    color: black;
+}
+.section1 ul li{
+    list-style: none;
+    float: left;
+    width: 386px;
+    border: 1px solid #ccc;
+}
+.section1 ul li:not(:first-child){
+    margin-left: 20px;
+}
+.section1 ul li img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.section1 ul li h3{
+    color: #ccc;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.section1 ul li p{
+    color: #ccc;
+    text-align: center;
+}
+.se1-de{
+    padding: 25px 0;
+}
+.section1 ul li:hover .se1-de{
+    transition:all 1s;
+    background-color: #5d51c1;
+}
+
+
+/*内容二*/
+
+    /*标题*/
+.section2{
+    width: 100%;
+    height: 550px;
+    margin-top: 40px;
+}
+.se2-cont{
+    width: 1200px;
+    margin: auto;
+}
+.se2-title{
+    height: 50px;
+    width: 100%;
+}
+.se2-title:hover{
+    transition:all 1s;
+    border-bottom: 3px solid #666;
+}
+.se2-title h2{
+    font-size: 25px;
+    color: #666;
+    letter-spacing: 6px;
+    text-shadow: 5px 5px 5px #666;
+}
+    /*内容*/
+.se2-cont-title{
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.se2-cont-title>div{
+    color: #4ab344;
+    width: 100px;
+    text-align: center;
+}
+.se2-a>div:nth-child(1){
+    float: left;
+    width: 30%;
+}
+.se2-a>div:nth-child(2){
+    float: left;
+    width: 40%;
+}
+.se2-a>div:nth-child(3){
+    float: left;
+    width: 30%;
+}
+.se2-cont-title div{
+    border-bottom: 2px solid #4ab344;
+    padding: 15px 0;
+}
+
+
+
+.se2-cont1 a{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 20px 30px 30px 30px;
+    margin: 30px 7px 0px;
+}
+.se2-cont1 p{
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+}
+.se2-cont1 img{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.se2-cont2 a{
+    display: block;
+    margin-top: 40px;
+}
+.se2-cont2 img{
+    width: 97%;
+}
+
+.se2-cont3 marquee{
+    border: 1px solid red;
+    height: 335px;
+    margin-top: 30px;
+}
+.se2-cont3 marquee li{
+    list-style: none;
+    color: #666;
+    line-height: 27px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border-bottom: dashed 1px #e1e1e1;
+}
+
+
+/*内容三*/
+.section3{
+    width: 100%;
+    height: 750px;
+    margin-top: 40px;
+}
+.section3>div{
+    width: 1200px;
+    margin: auto;
+}
+.se-img{
+    width: 360px;
+    height: 240px;
+    float: left;
+    margin: 20px 0 0 30px;
+}
+.se-img img{
+    width: 100%;
+}
+
+
+
+.photos {
+    background: url(../images/index-image1.jpg) no-repeat 0px 0px fixed;
+    height: 350px;
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 150px;
+    text-align: center;
+}
+
+/*内容四，小区绿化*/
+.section4{
+    width: 100%;
+}
+.se4-cont{
+    width: 1200px;
+    height: 900px;
+    margin: auto;
+    /*border: 1px solid red;*/
+}
+
+.se4-left{
+    float: left;
+    width: 770px;
+    height: 700px;
+    /*border: 1px solid red;*/
+}
+.se4-left-hd{
+    width: 100%;
+    height: 280px;
+    background-color: #1b6d85;
+    padding: 20px;
+}
+.se4-left h3{
+    font-size: 20px;
+    color: white;
+}
+.se4-left span{
+    display: block;
+    margin-top: 20px;
+}
+.se4-right{
+    float: right;
+    width: 380px;
+    /*border: 1px solid red;*/
+}
+.se4-right img{
+    width: 100%;
+    height: 700px;
+}
+.se4-left-bd a{
+    font-size: 18px;
+    color: #333333;
+}
+.se4-left-bd span{
+    font-size: 15px;
+    color: #333333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    line-height: 20px;
+}
+.se4-left-bd{
+    padding: 20px;
+}
+.se4-left-bd1{
+    height: 200px;
+}
+.se4-left-bd1>div:nth-child(1){
+    width: 270px;
+}
+
+.se4-left-bd1>div:nth-child(2){
+    width: 380px;
+    margin-left: 20px;
+}
+.se4-left-bd1 div{
+    float: left;
+}
+
+
+
+

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>惠服务</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+	<a name="head"></a>
+<div class="head">
+        <div class="head-main">
+            <div class="head-title">
+              <a href="index.html"  >幸福小区</a>
+            </div>
+            <ul>
+                <li><a href="index.html"  >首页</a></li>
+                <li><a href="shop.html" style='color: #4ab344'>惠服务</a></li>
+                <li><a href="life.html"  >生活圈</a></li>
+                <li><a href="LoadActivityInfo.html" >活动社</a></li>
+                <li><a href="julebu.jsp"  >俱乐部</a></li>
+                <li><a href="wuye.jsp"  >物业服务</a></li>
+            </ul>
+            <div class="head-login">
+                <div style="display:block"><a href="login.jsp"  >登录</a>|<a href="wuye.jsp"  >关于我们</a></div>
+                <div style="display:none">
+                    <label>欢迎你</label>
+                    <span></span>
+                    <label>|<a href="LoadPersonCenter.html"  >个人中心</a>|</label>
+                    <a href="Logout.html">注销</a>
+                </div> 
+            </div>
+        </div>
+
+    </div>
+
+		<!--轮播-->	
+    <div class="shop-body-bl">   
+    </div>    
+ <!--锚记链接标签-->
+    <div class="shop-body-title" >
+    	<a href="#daliy" >
+        	<img src="images/daliy.png"  class="title-firstImg"/>
+            <label class="title-text">日常用品</label>
+            <img src="images/right.png" class="title-secendImg" />
+        </a>
+       <a href="#vegetables">
+        	<img src="images/vegetables.png"  class="title-firstImg"/>
+            <label class="title-text">易果生鲜</label>
+            <img src="images/right.png" class="title-secendImg" />
+        </a>
+        <a href="#flowers">
+        	<img src="images/flowers.png" class="title-firstImg"/>
+            <label class="title-text">鲜花速递</label>
+            <img src="images/right.png" class="title-secendImg" />
+        </a>
+    </div>
+ <!--每日特卖-->
+	<div class="shop-everyday-title">
+    	<div class="shop-everyday-titleHead">
+            <span>———————</span>
+            <b>&nbsp;&nbsp;每日新品特卖&nbsp;&nbsp;</b>
+            <span>———————</span>
+        </div>
+        <div class="shop-everyday-titleFoot">
+        	新鲜水果每一天，健康生活每一刻
+        </div>
+    </div>
+ <!--每日特卖水果内容-->
+ 	<div class="shop-everyShow">
+    	<div class="shop-everyShow-top">
+        	<div class="everyShow-top-left">
+            
+            	<div class="everyShow-left-demo1">有机生鲜</div>
+                <div class="everyShow-left-demo2">天然无污染水果</div>
+                <div class="everyShow-left-demo3"><b>6.8折</b>起</div>
+                <a href="#">
+                	查看详情 >
+                </a>
+            </div>
+            <div class="everyShow-top-right"><img src="images/showtop1.jpg" /></div>
+        </div>
+    	<div class="shop-everyShow-bottom">
+    	
+    	
+        	<div>
+            	<img src="http://192.168.12.112:9097/PHPCommunity/communityData/image/richang/fruit01.jpg" />
+                <span>橙子/3个/&yen;10</span>
+                <a onclick="addShopCart(9,'10','橙子/3个')">快抢购！</a>
+            </div>
+         
+        	<div>
+            	<img src="http://101.200.58.3:9090/lifeManager/image/richang/fruit02.jpg" />
+                <span>蓝莓/500g/&yen;11</span>
+                <a onclick="addShopCart(10,'11','蓝莓/500g')">快抢购！</a>
+            </div>
+         
+        	<div>
+            	<img src="http://101.200.58.3:9090/lifeManager/image/richang/fruit03.jpg" />
+                <span>苹果/500g/&yen;12</span>
+                <a onclick="addShopCart(11,'12','苹果/500g')">快抢购！</a>
+            </div>
+         
+        	<div>
+            	<img src="http://101.200.58.3:9090/lifeManager/image/richang/fruit04.jpg" />
+                <span>葡萄/500g/&yen;13</span>
+                <a onclick="addShopCart(12,'13','葡萄/500g')">快抢购！</a>
+            </div>
+            
+        </div>
+       
+    </div>   
+ <!--生活-->
+ 	<a name="daliy"></a>	
+	<div class="shop-everyday-title">
+    	<div class="shop-everyday-titleHead">
+            <span>———————</span>
+            <b>&nbsp;&nbsp;生活分类&nbsp;&nbsp;</b>
+            <span>———————</span>
+        </div>
+        <div class="shop-everyday-titleFoot">
+        	新鲜水果每一天，健康生活每一刻
+        </div>
+    </div>     
+ <!--生活分类-->
+	<div class="shop-daliy-body">
+    	<div class="show-daliy-bg">
+         <!--生活分类left-->
+    		<div class="show-daliy-left">
+            	<img src="images/daliy/daliyall.png" />
+                
+                <label>生活用品</label>
+                
+            </div>
+            <div class="daliy-list">
+            
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/life02.jpg" />
+                    <font onclick="addShopCart(2,'11','抽纸/12包')">抢购</font>
+                    <span>抽纸/12包<b>/&yen;11</b></span>
+                </div>
+            
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/life03.jpg" />
+                    <font onclick="addShopCart(3,'12','清洁剂/500ml')">抢购</font>
+                    <span>清洁剂/500ml<b>/&yen;12</b></span>
+                </div>
+            
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/life04.jpg" />
+                    <font onclick="addShopCart(4,'13','海天酱油/250ml')">抢购</font>
+                    <span>海天酱油/250ml<b>/&yen;13</b></span>
+                </div>
+            
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/life05.jpg" />
+                    <font onclick="addShopCart(5,'14','长粒香/5kg')">抢购</font>
+                    <span>长粒香/5kg<b>/&yen;14</b></span>
+                </div>
+            
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/life06.jpg" />
+                    <font onclick="addShopCart(6,'15','花生油/1h')">抢购</font>
+                    <span>花生油/1h<b>/&yen;15</b></span>
+                </div>
+            
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/life07.jpg" />
+                    <font onclick="addShopCart(7,'16','椒盐/500g')">抢购</font>
+                    <span>椒盐/500g<b>/&yen;16</b></span>
+                </div>
+                
+            </div>      
+    	</div>
+    </div>
+ <!--栏开分类-->
+   <div class="shop-bg-show">
+     <div>
+         新鲜蔬菜，每日上新，敬请期待	
+     </div>
+   </div> 
+  <!--蔬菜-->
+	<a name="vegetables"></a>	
+	<div class="shop-everyday-title">
+    	<div class="shop-everyday-titleHead">
+            <span>———————</span>
+            <b>&nbsp;&nbsp;新鲜蔬菜&nbsp;&nbsp;</b>
+            <span>———————</span>
+        </div>
+        <div class="shop-everyday-titleFoot">
+        	都是白菜价
+        </div>
+    </div>    
+ <!--蔬菜-->
+	<div class="shop-vegetables-body">
+    	<div class="show-vegetables-bg">
+         <!--生活分类left-->
+    		<div class="show-vegetables-left">
+            	<img src="images/vegetables/vegatable.png" />
+                
+                <label>新鲜蔬菜</label>
+                
+            </div>
+             <div class="vegetables-list">
+             
+              
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/shucai01.jpg" />
+                    <font onclick="addShopCart(17,'10','红薯/500g')">抢购</font>
+                    <span>红薯/500g<b>/&yen;10</b></span>
+                </div>
+               
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/shucai02.jpg" />
+                    <font onclick="addShopCart(18,'11','雷笋')">抢购</font>
+                    <span>雷笋<b>/&yen;11</b></span>
+                </div>
+               
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/shucai03.jpg" />
+                    <font onclick="addShopCart(19,'12','香菇')">抢购</font>
+                    <span>香菇<b>/&yen;12</b></span>
+                </div>
+               
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/shucai04.jpg" />
+                    <font onclick="addShopCart(20,'13','小青菜')">抢购</font>
+                    <span>小青菜<b>/&yen;13</b></span>
+                </div>
+               
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/shucai05.jpg" />
+                    <font onclick="addShopCart(21,'14','生菜')">抢购</font>
+                    <span>生菜<b>/&yen;14</b></span>
+                </div>
+               
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/shucai06.jpg" />
+                    <font onclick="addShopCart(22,'15','西红柿')">抢购</font>
+                    <span>西红柿<b>/&yen;15</b></span>
+                </div>
+               
+             
+            </div>      
+    	</div>
+    </div>  
+<!--鲜花-->
+	<a name="flowers"></a>	
+	<div class="shop-everyday-title">
+    	<div class="shop-everyday-titleHead">
+            <span>———————</span>
+            <b>&nbsp;&nbsp;鲜花速递&nbsp;&nbsp;</b>
+            <span>———————</span>
+        </div>
+        <div class="shop-everyday-titleFoot">
+        	爱满人间
+        </div>
+    </div>   
+<!--鲜花-->
+	<div class="shop-flowers-body">
+    	<div class="show-flowers-bg">
+         <!--生活分类left-->
+    		<div class="show-flowers-left">
+            	<img src="images/flower/flowerall.png" />
+                <label>特色鲜花</label>
+            </div>
+            <div class="flowers-list">
+              
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/flower01.jpg" />
+                     <font onclick="addShopCart(25,'280','红玫瑰')">抢购</font>
+                    <span>红玫瑰<b>/&yen;280</b></span>
+                </div>
+              
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/flower02.jpg" />
+                     <font onclick="addShopCart(26,'310','粉色桔梗')">抢购</font>
+                    <span>粉色桔梗<b>/&yen;310</b></span>
+                </div>
+              
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/flower03.jpg" />
+                     <font onclick="addShopCart(27,'140','香槟色桔梗')">抢购</font>
+                    <span>香槟色桔梗<b>/&yen;140</b></span>
+                </div>
+              
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/flower04.jpg" />
+                     <font onclick="addShopCart(28,'240','香槟玫瑰花束')">抢购</font>
+                    <span>香槟玫瑰花束<b>/&yen;240</b></span>
+                </div>
+              
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/flower05.jpg" />
+                     <font onclick="addShopCart(29,'260','暗香花束')">抢购</font>
+                    <span>暗香花束<b>/&yen;260</b></span>
+                </div>
+              
+            	<div>
+                	<img src="http://101.200.58.3:9090/lifeManager/image/richang/flower06.jpg" />
+                     <font onclick="addShopCart(30,'199','紫玫瑰')">抢购</font>
+                    <span>紫玫瑰<b>/&yen;199</b></span>
+                </div>
+                 
+               
+            </div>      
+    	</div>
+    </div>
+ <!--购物车-->   
+  <a  class="shop-cart" id="gocart">
+  	<img src="images/shop-cart.png" id="gocart-img"/>
+  	<div id="carnum">1</div>
+  </a>
+  <a href="#head" class="go-top" id="gotop">
+  	<img src="images/goTop1.png" />
+  </a>	
+  
+   <!--隐藏层-->  
+  	<div id="showdow">
+    	<div class="showdow-title">
+        	我的购物车
+        </div>
+        <div class="showdow-sroll">
+        	<table cellpadding="0" cellspacing="0" id="tb">
+            	<thead>
+                	<tr>
+                    	<td>商品</td>
+                        <td>名称</td>
+                        <td>数量</td>
+                        <td>小计</td>
+                        <td>操作</td>
+                    </tr>
+                </thead>
+                <tbody id="tbmain">
+                	 
+            		<input type="hidden" value="0" id="shopnum">   
+            		
+                </tbody>
+            </table>
+        </div>
+        <div class="shop-all-money">
+        	<span>总计：</span>
+            <label id="allnum">￥0.0</label>
+            <div class="shop-all-btn">
+                <a id="tjbd">提交订单</a>
+            </div>            
+        </div>
+       
+    </div>
+    
+    <div id="noticeMessage">
+       <div id="noticeCenter">
+       
+       </div>
+   </div>    
+    <!--页脚-->
+     <div>
+    	
+<div class="foot">
+        <div class="foot-title">
+            <div>
+                <img src="images/tb1.png"/>
+                <p>工作时间<br/>9:00-23:00</p>
+            </div>
+            <div>
+                <img src="images/tb2.png"/>
+                <p>申请保修<br/>申请成功后联系你</p>
+            </div>
+            <div>
+                <img src="images/tb3.png"/>
+                <p>联系我们<br/>020-0000000</p>
+            </div>
+            <div>
+                <img src="images/tb4.png"/>
+                <p>免费咨询<br/>家里有问题请联系</p>
+            </div>
+        </div>
+        <div class="foot-copyright">©2016 网站样板—房地产 版权所有</div>
+        <div class="foot-copyright"><a href="#">手机版</a> | <a href="#">本站使用XX建站搭建</a> | <a href="#">管理登录</a></div>
+    </div>
+
+    </div>
+   
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/bootstrap.js"></script>
+    <script>
+        var num=$("#shopnum").val();
+        if(num==0){
+          num=0;
+        }
+        var priceAll=$("#allnum").text().split('￥')[1];
+        	
+		$(".shop-body-title>a").css("animation","ma1 1s ease-out");
+    	$(window).scroll(function(){
+			//当滚动960像素时，加载小图标（购物车和置顶）
+			$("#gocart").css("display","block");
+				$("#gotop").css("display","block");
+
+			if($(this).scrollTop() ==0){
+				$("#gocart").css("display","none");
+				$("#gotop").css("display","none");
+				}
+			if($(this).scrollTop() >3050){
+				$("#gocart").css("margin-bottom","100px");
+				$("#gotop").css("margin-bottom","100px");
+				}
+				else{$("#gocart").css("margin-bottom","0px");
+				$("#gotop").css("margin-bottom","0px");}			
+			});
+			
+			
+			
+		//移上去特效	
+		$bbb=$("#gocart").find("img");
+		$aaa=$("#gotop").find("img");
+		$("#gocart").bind('mouseover',function(){
+			$bbb.attr("src","images/shop-cart2.png");
+			$("#gocart").css("background-color","#4ab344")
+			})
+		$("#gocart").bind('mouseout',function(){
+			$bbb.attr("src","images/shop-cart.png");
+			$("#gocart").css("background-color","#FFFFFF")
+			})
+		$("#gotop").bind('mouseover',function(){
+			$aaa.attr("src","images/goTop.png");
+			$("#gotop").css("background-color","#4ab344")
+			})	
+		$("#gotop").bind('mouseout',function(){
+			$aaa.attr("src","images/goTop1.png");
+			$("#gotop").css("background-color","#FFFFFF")
+			})		
+	
+	//点击购物车出现	
+	$("#gocart-img").click(function(){
+   		var div = $("#showdow");
+	    if ( div.css("display") === "none" ) {
+	        div.show();             
+	    } else {
+	        div.hide();
+	    }
+	   
+	});	
+			
+			
+	//加入购物车按钮
+	function addShopCart(id,price,name){
+	   
+		$.get(
+			"buycar.html",
+			{id:id,money:price},
+			function(e){
+			 	if(e>0){
+			 	
+			 		var $tr=$('<tr></tr>');
+			 		var $idtd=$('<td></td>').text(++num);
+			 		    $tr.append($idtd);
+			 	    var $nametd=$('<td></td>').text(name);
+			 	        $tr.append($nametd);
+			 	    var $numtd=$('<td></td>').text(1);
+			 	        $tr.append($numtd);
+			 	    var $xiaojitd=$('<td></td>').text(price);
+			 	        priceAll=(parseInt(priceAll)+parseInt(price)).toFixed(2);
+			 	        $("#allnum").text('￥'+priceAll);
+			 	        $tr.append($xiaojitd);
+			 	    var $deltd=$('<td></td>');
+			 	        $delbtn=$('<button></button>').text("删除");
+			 	        $delbtn.bind('click',function(e){
+			 	           $.get(
+			 	             'deletebuycar.html',
+			 	             {id:id},
+			 	             function(data){
+			 	               if(data>0){
+			 	                  var p=$(this).parent().prev().text();
+			 	                 priceAll=parseInt(priceAll)-parseInt(price);
+			 	                 pri=priceAll.toFixed(2);
+			 	                 $("#allnum").html('￥'+pri);
+			 	                  $tr.remove();
+			 	               }             
+			 	             }
+			 	           )
+			 	         })
+			 	        $deltd.append($delbtn);
+			 	        $tr.append($deltd);
+			 	     $("#tbmain").append($tr);               
+			 	}else if(e==-1){
+			 	  $("#noticeCenter").text("请先登录");
+				  $("#noticeMessage").fadeIn(1000);
+				  $("#noticeMessage").delay(1000).fadeOut(1000);
+				  
+                }else{
+                 $("#noticeCenter").text("已达到上限");
+			 	 $("#noticeMessage").fadeIn(1000);
+				 $("#noticeMessage").delay(1000).fadeOut(1000);
+                   
+			 	}
+			}		
+		);
+	}	
+	function delgood(sender,goodid){
+	  $.get(
+			 	             'deletebuycar.html',
+			 	             {id:goodid},
+			 	             function(data){
+			 	               if(data>0){		 	              
+			 	                 
+		 	                   	 var price=$(sender).parent().prev().text();
+			 	                 priceAll=parseInt(priceAll)-(parseInt(price)).toFixed(2);
+			 	               	 $(sender).parent().parent().remove();
+			 	                 $("#allnum").text('￥'+priceAll.toFixed(1));
+
+			 	               }
+			 	                     
+			 	             }
+			 	           )
+	
+	}
+	
+	$("#tjbd").bind('click',function(){
+		$.get(
+			'savedd.html',
+			
+			function(e){
+				if(e>0){
+				    $("#tbmain").text("");
+				    $("#allnum").html("￥"+"0.00");
+				     $("#noticeCenter").html("您的预订单我们已经收到我们将在采购后的第一时间送货上门");
+				 	 $("#noticeMessage").fadeIn(1000);
+					 $("#noticeMessage").delay(2000).fadeOut(1000);
+                    }
+				}
+			
+		);
+		
+	
+	})
+	
+		
+    </script>
+    
+</body>
+</html>

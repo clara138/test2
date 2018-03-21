@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>幸福小区</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
+    <link rel="stylesheet" href="css/navfoot.css"/>
+</head>
+<body>
+
+<!-- 导航部分 -->
+	<a name="head"></a>
+<div class="head">
+        <div class="head-main">
+            <div class="head-title">
+              <a href="index.html"  >幸福小区</a>
+            </div>
+            <ul>
+                <li><a href="index.html"  >首页</a></li>
+                <li><a href="shop.html">惠服务</a></li>
+                <li><a href="life.html"  >生活圈</a></li>
+                <li><a href="LoadActivityInfo.html" >活动社</a></li>
+                <li><a href="julebu.jsp"  >俱乐部</a></li>
+                <li><a href="wuye.jsp"  >物业服务</a></li>
+            </ul>
+            <div class="head-login">
+                <div style="display:block"><a href="login.html"  style='color: #4ab344'>登录</a>|<a href="wuye.jsp"  >关于我们</a></div>
+                <div style="display:none">
+                    <label>欢迎你</label>
+                    <span id="ownerName"></span>
+                    <label>|<a href="personal.html"  >个人中心</a>|</label>
+                    <a href="javascript:;" class="linkLogout">注销</a>
+                </div> 
+            </div>
+        </div>
+
+    </div>
+
+<!-- 内容 -->
+<div class="content">
+	<!-- 登录背景 -->
+	<div class="carouser-inner">
+		<div class="item-img">
+			<img src="images/login-bg1.jpg">
+		</div>
+	</div>
+
+	<!-- 登录框 -->
+	<div class="login-div">
+		<div class="login-title">Love House</div>
+		<!-- 登录验证错误提示信息 -->
+		<div class="login-warn" id="showInfo"></div>
+		<!-- 用户名 -->
+		<div class="item-icon-user">
+     		<div class="item-icon item-icon-wp"></div>
+     		<div class="item-icon-input">
+     			<input type="text" placeholder="请输入手机号" class="item-input" id="loginPhone" value="18852983875">
+     		</div>
+     	</div>
+     	<!-- 密码 -->
+		<div class="item-icon-user">
+     		<div class="item-icon item-icon-pwd"></div>
+     		<div class="item-icon-input">
+     			<input type="password" placeholder="请输入密码（默认身份证后六位）" class="item-input" id="loginPassword" value="123456">
+     		</div>
+     	</div>
+     	<button class="item-btn" id="btnLogin">登录</button>
+	</div>
+</div>
+
+
+<!--页脚部分-->
+<div>
+    <div class="foot">
+        <div class="foot-title">
+            <div>
+                <img src="images/tb1.png">
+                <p>工作时间<br>9:00-23:00</p>
+            </div>
+            <div>
+                <img src="images/tb2.png">
+                <p>申请保修<br>申请成功后联系你</p>
+            </div>
+            <div>
+                <img src="images/tb3.png">
+                <p>联系我们<br>020-0000000</p>
+            </div>
+            <div>
+                <img src="images/tb4.png">
+                <p>免费咨询<br>家里有问题请联系</p>
+            </div>
+        </div>
+        <div class="foot-copyright">©2016 网站样板—房地产 版权所有</div>
+        <div class="foot-copyright"><a href="#">手机版</a> | <a href="#">本站使用XX建站搭建</a> | <a href="#">管理登录</a></div>
+    </div>
+</div>
+
+<script src="lib/js/jquery.min.js"></script>
+<script src="lib/js/bootstrap.js"></script>
+<script src="util/globalSetting.js"></script>
+<script type="text/javascript">
+	(function(){
+		// 点击登录提交
+		$('#btnLogin').bind('click' , function(e){
+			var phone = $('#loginPhone').val();
+			var password = $('#loginPassword').val();
+			var info = $('#showInfo');
+			
+			if(phone == '' || password == ''){
+				info.text('用户名和密码不能为空');
+			}
+			else{
+				$.ajax({
+		            type:'post',
+		            url:ROOT_URL + 'ajax/ownerLogin.php',
+		            data:{ phone:phone , password:password },
+		            success:function(result){
+		            	// console.log(result);
+		                if(result.code == 100){
+		                    info.text('');
+		                    console.log(result.data);
+		                    //保存登录人的信息
+		                    sessionStorage.setItem('CurrentUser',JSON.stringify(result.data));
+		                    //跳转页面
+		                    window.location.href = 'personal.html';
+		                }
+		                else{
+		                    info.text('请确认好用户名和密码后再登陆');
+		                }
+		            }
+		        });
+			}
+		});
+
+    // 检查是否登录
+    var owner = sessionStorage.getItem('CurrentUser');
+    /*// 点击注销
+    $('.linkLogout').bind('click' , function(e){
+      // 清除缓存
+      sessionStorage.setItem('CurrentUser','');
+    });*/
+	})();
+</script>
+
+</body>
+
+
+	
+
+</html>

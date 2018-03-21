@@ -1,0 +1,166 @@
+/*公共导航样式*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 1200px;
+}
+
+.head {
+    width: 100%;
+    height: 110px;
+    color: #ffffff;
+    background-color: #222222;
+    border-bottom: 3px solid #4ab344;
+}
+
+.head-main {
+    width: 1200px;
+    margin: auto;
+    height: 110px;
+}
+
+.head-main ul {
+    list-style: none;
+    position: absolute;
+    margin-left: 270px;
+    line-height: 110px;
+}
+
+.head-main ul li {
+    float: left;
+    margin-left: 50px;
+    font-size: 16px;
+}
+
+.head-main ul li a {
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    font-size: 16px;
+}
+
+.head-main ul li a:hover {
+    color: #4ab344;
+}
+
+a.titleselected {
+    color: #4ab344;
+}
+
+.head-title {
+    position: absolute;
+    top: 30px;
+    left: 15%;
+    font-size: 32px;
+    z-index: 32;
+    margin-top: 1px;
+    text-align: left;
+    white-space: nowrap;
+    color: #4ab344;
+}
+
+.head-title>a {
+
+    text-decoration: none;
+    color: #4ab344;
+}
+
+.head-title>a:link {
+    text-decoration: none;
+    color: #4ab344;
+}
+
+.head-title>a:visited {
+    text-decoration: none;
+    color: #4ab344;
+}
+
+.head-title>a:hover {
+    text-decoration: none;
+    color: #4ab344;
+}
+
+.head-title>a:activited {
+    text-decoration: none;
+    color: #4ab344;
+}
+.head-login {
+    color: rgb(204, 204, 204);
+    width: 200px;
+    height: 110px;
+    position: relative;
+    margin-left: 900px;
+}
+
+.head-login a {
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    font-size: 16px;
+}
+
+.head-login>div {
+    top: 44px;
+    font-size: 16px;
+    width: 270px;
+    position: absolute;
+    left: 30px;
+}
+
+
+
+
+
+/*页脚样式*/
+
+
+.foot {
+    font-size: 15px;
+    width: 100%;
+    height: 200px;
+    color: rgb(204, 204, 204);
+    background-color: #222222;
+}
+
+.foot-title {
+    width: 1200px;
+    margin: auto;
+    height: 130px;
+}
+
+.foot-title>div {
+    position: relative;
+    display: inline-block;
+    width: 235px;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.foot-title>div>p {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 90px;
+}
+
+.foot-copyright {
+    width: 500px;
+    height: 20px;
+    margin: auto;
+    color: rgb(204, 204, 204);
+    text-align: center;
+}
+
+.foot-copyright a {
+    margin-left: 6px;
+    margin-right: 6px;
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+}
+
+.foot-copyright a:hover {
+    color: #4ab344;
+    text-decoration: underline;
+}

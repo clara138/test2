@@ -1,0 +1,107 @@
+
+.content{
+	position: relative;
+}
+
+.carouser-inner{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.item-img{
+	width: 100%;
+	/*min-height: 800px;*/
+	height: 800px;
+}
+
+/*登录框*/
+.login-div{
+	position: absolute;
+	left: 240px;
+	top: 0;
+	width: 500px;
+	height: 800px;
+	background: rgba(0,0,0,0.2);
+}
+.login-title{
+	padding-top: 150px;
+	text-align: center;
+	color: white;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 50px;
+}
+.item-icon-user{
+	/*margin-top: 50px;*/
+	margin: 45px auto 0;
+	width: 340px;
+	height: 46px;
+	background: rgba(0,0,0,0.5);
+	border: 1px solid #e1e1e1;
+	overflow: hidden;
+	border-radius: 6px;
+}
+.item-icon{
+	float: left;
+	width: 47px;
+	height: 30px;
+	margin: 7px 14px;
+	border-right: 1px solid #e1e1e1;
+}
+.item-icon-wp{
+	background: url(../images/login-user.png) no-repeat;
+}
+.item-icon-pwd{
+	background: url(../images/login-pwd.png) no-repeat;
+}
+.item-icon-input{
+	float: left;
+	position: relative;
+	line-height: 46px;
+}
+.item-input{
+	position: absolute;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	border: 0;
+	font-size: 14px;
+	font-weight: bold;
+	width: 265px;
+	height: 44px;
+	padding-left: 10px;
+	color: white;
+}
+.item-input:focus{
+	background: #F1FDFA;
+	color: black;
+	font-weight: bold;
+}
+
+.item-btn{
+	margin-top: 60px;
+	margin-left: 80px;
+	line-height:46px;
+	border: 0;
+	border-radius: 6px;
+	font-size:16px;
+	text-align:center;
+	letter-spacing:5px;
+	color:white;
+	width:340px;
+	height:46px;
+	background:#4ab344;
+	cursor:pointer;
+	outline: none;
+	font-weight: bold;
+}
+
+.login-warn{
+	padding-left: 80px;
+	margin-top: 40px;
+	line-height: 30px;
+	height: 30px;
+	color: #FC9115;
+	font-size: 16px;
+	font-weight: bold;
+}
+

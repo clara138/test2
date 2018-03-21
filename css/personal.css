@@ -1,0 +1,518 @@
+.person-bg{
+	width: 100%;
+    min-height: 1000px;
+    background: url(../images/personbg.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+.content{
+	width: 1200px;
+	min-height: 1000px;
+	margin: auto;
+	padding-top: 40px;
+	/*display: flex;*/
+}
+.content>div>div{
+	background: rgba(0,0,0,0.5);
+	margin-bottom: 20px;
+}
+
+
+/***********************************/
+.person-left{
+	width: 280px;
+	min-height: 500px;
+	float: left;
+}
+
+.left-port{
+	height: 240px;
+	text-align: center;
+}
+.left-port>div{
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+	margin: auto;
+	padding: 20px;
+}
+#ownerImage{
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	display: block;
+	margin: auto;
+}
+.left-port p{
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 20px;
+    margin-top: 6px;
+}
+
+.left-count{
+	height: 80px;
+	text-align: center;
+	color: white;
+}
+.left-count>div{
+	width: 92px;
+	height: 60px;
+	padding-top: 20px;
+	text-align: center;
+	float: left;
+}
+.left-count>div>p:nth-child(1){
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+.left-count>div>p:nth-child(2){
+    font-size: 14px;
+    margin-top: 4px;
+}
+.left-count>.left-line{
+	width: 1px;
+    height: 48px;
+    background: #ffffff;
+    margin-top: 20px;
+    float: left;
+}
+
+.left-moreInfo{
+	height: 120px;
+}
+.left-moreInfo h2{
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+.left-moreInfo hr{
+	margin: 10px 10px;
+}
+.left-moreInfo p{
+	color: #1296DB;
+    padding: 10px 10px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left-code{
+	/*height: 280px;*/
+}
+.left-code img{
+	width: 200px;
+	margin: 40px;
+}
+
+
+/***********************************/
+.person-right{
+	width: 900px;
+	margin-left: 20px;
+	min-height: 800px;
+	float: left;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.right-top{
+	height: 48px;
+	line-height: 48px;
+	cursor: pointer;
+}
+.right-top>div{
+	color: #B0BDD0;
+	width: 150px;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+}
+.right-top .active,.right-top>div:hover {
+    border-bottom: 2px solid #F7691D;
+    background: #222222;
+}
+
+.person-center{
+	min-height: 800px;
+	color: white;
+	font-weight: bold;
+	overflow: hidden;
+	max-height: 880px;
+}
+.person-center>div{
+	display: none;
+}
+.person-center>div.active{
+	display: block;
+}
+.right-title{
+	font-size: 18px;
+	padding: 20px;
+	border-bottom: 1px solid white;
+	margin-bottom: 40px;
+}
+
+/***********************************/
+/* 我的团购 */
+.myorders{
+	/*width: 800px;*/
+	padding-left: 30px;
+}
+.myorders table{
+	width: 100%;
+	background: transparent;
+	text-align: center;
+}
+.myorders table th{
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+.myorders table td{
+	padding: 5px;
+	vertical-align: middle;
+}
+.myorders thead{
+	width: 100%;
+}
+.myorders th:nth-child(1){
+	/*width: 15%;*/
+	width: 117px;
+}
+.myorders th:nth-child(2){
+	/*width: 20%;*/
+	width: 156px;
+}
+.myorders th:nth-child(3){
+	/*width: 10%;*/
+	width: 78px;
+}
+.myorders th:nth-child(4){
+	/*width: 15%;*/
+	width: 117px;
+}
+.myorders th:nth-child(5){
+	/*width: 25%;*/
+	width: 195px;
+}
+.myorders th:nth-child(6){
+	/*width: 15%;*/
+	width: 117px;
+}
+.myorders img{
+	width: 80px;
+	height: 80px;
+}
+/***********************************/
+/* 我的消息 */
+.mymessage{
+	margin: 0 40px;
+}
+.mymessage>div{
+	display: inline-block;
+}
+.msgicon{
+	width: 60px;
+	height: 48px;
+	text-align: center;
+	/*float: left;*/
+}
+.msgicon>img{
+	width: 32px;
+	vertical-align: middle;
+}
+.msgtext{
+	margin-left: 20px;
+	width: 640px;
+}
+.msgdel{
+	width: 68px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 2px;
+    /*float: left;*/
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    line-height: 26px;
+    color: #555;
+}
+
+/***********************************/
+/* 我的活动 */
+.activity-item{
+	margin: auto;
+	width: 860px;
+	height: 240px;
+}
+.activity-item>div{
+	/*display: inline-block;*/
+	float: left;
+	font-weight: normal;
+}
+.activity-img{
+	width: 300px;
+    height: 240px;
+}
+.activity-img img{
+	width: 260px;
+    height: 200px;
+    margin: 20px 20px;
+}
+.activity-info{
+	width: 500px;
+    height: 200px;
+    margin: 20px 20px;
+    color: white;
+}
+::-webkit-scrollbar {display:none} /*隐藏滚动条！！！！！*/
+.activity-info h2{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+    margin-bottom: 10px;
+}
+.activity-info p{
+	font-size: 14px;
+    color: #999999;
+    text-indent: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    line-height: 20px;
+
+    overflow-y: auto;
+    max-height: 120px;
+}
+.activity-nobtn{
+	width: 120px;
+    height: 32px;
+    background-color: rgba(0,0,0,0.8);
+    margin-top: 10px;
+    float: right;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/***********************************/
+/* 我的帖子 */
+.tabtitle{
+	font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.mytab{
+	margin: 15px auto;
+	position: relative;
+}
+.mytab::after{
+	display: block;
+	clear: both;
+	content: '';
+}
+.mytab>div{
+	float: left;
+	border-radius: 5px; 
+	background: rgba(0,0,0,0.8);
+	overflow: hidden;
+}
+.tab-img{
+	margin-left: 20px;
+	width: 80px;
+	height: 80px;
+}
+.tab-img img{
+	width: 80px;
+	height: 80px;
+	vertical-align: middle;
+}
+.tab-content{
+	width: 780px;
+	min-height: 80px;
+	color: white;
+	padding-left: 25px;
+	font-weight: normal;
+}
+.tab-content h3{
+	margin-top: 20px;
+    margin-bottom: 12px;
+}
+.tab-content p{
+	padding-bottom: 14px;
+    padding-right: 20px;
+    line-height: 20px;
+}
+
+/***********************************/
+/* 修改密码 */
+
+
+.pageOrder{
+	text-align: center;
+}
+.pageOrder>span{
+	display: inline-block;
+	width: 60px;
+}
+.pageOrder>a{
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 11px 11px;
+}
+.pageOrder>a.active{
+	background: #4AB344;
+    display: inline-block;
+}
+
+.editCenter {
+    color: #fff;
+    padding-top: 30px;
+    width: 320px;
+    text-align: center;
+    margin: auto;
+}
+.editCenter>div {
+    height: 56px;
+    line-height: 20px;
+    width: 320px;
+}
+.editCenter>div>input {
+    box-shadow: 0px 0px 8px #F7691D;
+    color: #666;
+    border-radius: 5px;
+    padding: 5px; 
+    margin-left: 10px; 
+}
+.item-normal {
+    display: none;
+}
+.item-warning {
+    display: block;
+    color: #ff0000;
+    font-size: 14px;
+    margin-left: 60px;
+}
+
+#editPsdBtn {
+    width: 256px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: #4AB344;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 35px;
+    cursor: pointer;
+    color: #333;
+}
+
+#loading{
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background:#202020;
+	z-index:9999;
+	display:none;
+}
+#loading>div{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:400px;
+	height:400px;
+	margin-top:-200px;
+	margin-left:-200px;
+}
+
+
+/***********************************/
+/* 完善资料 */
+.editcenter {
+    margin: auto;
+    width: 90%;
+}
+.editport{
+	width: 200px;
+    height: 200px;
+    margin: 50px 20px;
+    position: relative;
+    float: left;
+}
+.editport>div{
+	width: 100%;
+}
+.editport img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.editport span{
+	text-align: center;
+	display: block;
+	margin: 20px auto;
+}
+.editfrm{
+	float: right;
+    margin-right: 30%;
+}
+.editinfo {
+    margin-left: 40px;
+    color: white;
+    min-height: 340px;
+    margin-top: 20px;
+}
+.editinfo tr>td:first-child{
+	/*text-align: right;*/
+}
+.editinfo input {
+    box-shadow: 0px 0px 8px #F7691D;
+    color: #666;
+    border-radius: 5px;
+    padding: 5px; 
+    margin-left: 10px; 
+}
+.btn-submit{
+	width: 120px;
+    height: 32px;
+    background: #4AB344;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #333;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+}
+
+
+/***********************************/
+/* 物业 */
+.person-wuye>table {
+    color: white;
+    height: 600px;
+    font-size: 16px;
+    width: 840px;
+    margin-left: 20px;
+    text-align: center;
+    border-color: white;
+}
+
+
+
+
+
